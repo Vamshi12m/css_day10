@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .icons{
+            padding: 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 22px;
+            
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            /* border: 1px solid; */
+            position: sticky;
+            top: 0px;
+        }
+        .heading,.para-1{
+            text-align: center;
+        }
+        /* .main-container{
+            margin-left: 100px;
+            margin-right: 100px;
+        } */
+        @media screen and (min-width: 1000px) {
+            .main-container{
+                display: flex;
+                gap: 10px;
+               
+            } 
+        }
+        @media screen and (min-width: 400px) {
+            .main-container{
+                display: flex;
+                gap: 10px;
+               
+            } 
+        }
+        @media screen and (min-width: 400px) and ( max-width:800px) {
+            .main-container{
+                display: grid;
+                grid-template-areas: 'a a';
+                gap: 10px;
+               
+            } 
+        }
+
+        @media screen and (min-width: 1000px) {
+            .main-container-2{
+                display: flex;
+                gap: 10px;
+               
+            } 
+        }
+        @media screen and (min-width: 400px) {
+            .main-container-2{
+                display: flex;
+                gap: 10px;
+               
+            } 
+        }
+        @media screen and (min-width: 400px) and ( max-width:800px) {
+            .main-container-2{
+                display: grid;
+                grid-template-areas: 'a a';
+                gap: 10px;
+               
+            } 
+        }
+        .hide{
+            display: none;
+        }
+        button:focus-within + .hide{
+            display: block;
+        }
+        button{
+            border:0px;
+            background-color: white;
+        }
+        button:hover{
+            background-color: rgb(172, 165, 165);
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav><button class="icons"><i class="fa-solid fa-bars show"></i></button>
+        <div class="hide">
+            <a href="#" class="icons">Close menu</a><br><br>
+            <a href="#"  class="icons">Food</a><br><br>
+            <a href="#"  class="icons">About</a><br><br>
+        </div>
+        </nav>
+        <a href="#"  class="icons">My Food</a>
+        <a href="#"  class="icons">Mail</a>
+    </div>
+    <div class="main-container">
+        <div class="item1">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" width="100%" alt="">
+            <div>
+                <h3 class="heading">The Perfect Sandwich, A Real NYC Classic</h3>
+                <p class="para-1">Just some random text, lorem ipsum text praesent tincidunt</p>
+            </div>
+        </div>
+        <div class="item2">
+           <img src="https://www.w3schools.com/w3images/steak.jpg" width="100%" alt="">
+           <div>
+                <h3 class="heading">Let Me Tell You About This Steak</h3>
+                <p class="para-1">Lorem ipsum text praesent tincidunt ipsum lipsum. yjd</p>
+            </div>
+
+        </div>
+        <div class="item1">
+            <img src="https://www.w3schools.com/w3images/cherries.jpg" width="100%" alt="">
+            <div>
+                <h3 class="heading">Cherries, interrupted</h3>
+                <p class="para-1">Lorem ipsum text praesent tincidunt ipsum lipsum. What else?</p>
+            </div>
+        </div>
+        <div class="item1">
+            <img src="https://www.w3schools.com/w3images/wine.jpg" width="100%" alt="">
+            <div>
+                <h3 class="heading">Once Again, Robust Wine and Vegetable Pasta</h3>
+                <p class="para-1">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container-2">
+        <div class="item1">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" width="100%" alt="">
+            <div>
+                <h3 class="heading">The Perfect Sandwich, A Real NYC Classic</h3>
+                <p class="para-1">Just some random text, lorem ipsum text praesent tincidunt</p>
+            </div>
+        </div>
+        <div class="item2">
+           <img src="https://www.w3schools.com/w3images/steak.jpg" width="100%" alt="">
+           <div>
+                <h3 class="heading">Let Me Tell You About This Steak</h3>
+                <p class="para-1">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+
+        </div>
+        <div class="item1">
+            <img src="https://www.w3schools.com/w3images/cherries.jpg" width="100%" alt="">
+            <div>
+                <h3 class="heading">Cherries, interrupted</h3>
+                <p class="para-1">Lorem ipsum text praesent tincidunt ipsum lipsum. What else?</p>
+            </div>
+        </div>
+        <div class="item1">
+            <img src="https://www.w3schools.com/w3images/wine.jpg" width="100%" alt="">
+            <div>
+                <h3 class="heading">Once Again, Robust Wine and Vegetable Pasta</h3>
+                <p class="para-1">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
